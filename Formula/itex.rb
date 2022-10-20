@@ -13,6 +13,7 @@ class Itex < Formula
 
   def install
     # ENV.deparallelize  # if your formula fails when building in parallel
+    system "cp", "-r", "./templates", "#{prefix}/"
     system "cargo", "install", "--path", ".", "--root", "#{prefix}"
   end
 

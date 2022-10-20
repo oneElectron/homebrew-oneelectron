@@ -1,15 +1,18 @@
+# Documentation: https://docs.brew.sh/Formula-Cookbook
+#                https://rubydoc.brew.sh/Formula
+# PLEASE REMOVE ALL GENERATED COMMENTS BEFORE SUBMITTING YOUR PULL REQUEST!
 class Itex < Formula
-  desc "initialize a latex project"
+  desc "A tool to start a latex project"
   homepage ""
   url "https://github.com/oneElectron/itex/archive/refs/tags/v0.0.1.tar.gz"
-  sha256 "b343d2a31e7a146db852235a5bdff512d182f47616757da567fee7fb579a9d5a"
-  license ""
+  version "0.0.1"
+  sha256 ""
+  license "GPL"
 
   depends_on "rust" => :build
 
   def install
-    system "cargo", "build", "--release"
-
+    # ENV.deparallelize  # if your formula fails when building in parallel
     system "cargo", "install", "--path", ".", "--root", "#{prefix}"
   end
 

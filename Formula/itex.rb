@@ -1,7 +1,7 @@
 class Itex < Formula
   desc "initialize a latex project"
   homepage ""
-  url "https://github.com/oneElectron/itex/archive/refs/tags/v0.0.0.tar.gz"
+  url "https://github.com/oneElectron/itex/archive/refs/tags/v0.0.1.tar.gz"
   sha256 "b343d2a31e7a146db852235a5bdff512d182f47616757da567fee7fb579a9d5a"
   license ""
 

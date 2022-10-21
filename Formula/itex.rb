@@ -4,8 +4,8 @@
 class Itex < Formula
   desc "A tool to start a latex project"
   homepage ""
-  url "https://github.com/oneElectron/itex/archive/refs/tags/v0.1.3.tar.gz"
-  version "0.1.3"
+  url "https://github.com/oneElectron/itex/archive/refs/tags/v0.1.4.tar.gz"
+  version "0.1.4"
   sha256 ""
   license "GPL"
 

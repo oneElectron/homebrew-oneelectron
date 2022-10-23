@@ -4,8 +4,8 @@
 class cppLog2file < Formula
   desc "A dead simple c++ logging system"
   homepage ""
-  url "https://github.com/oneElectron/cpp-log2file/archive/refs/tags/v0.0.0.tar.gz"
-  version "0.0.0"
+  url "https://github.com/oneElectron/cpp-log2file/archive/refs/tags/v0.0.1.tar.gz"
+  version "0.0.1"
   sha256 ""
   license "GPLv3"
 

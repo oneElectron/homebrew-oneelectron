@@ -1,8 +1,8 @@
 # Documentation: https://docs.brew.sh/Formula-Cookbook
 #                https://rubydoc.brew.sh/Formula
 # PLEASE REMOVE ALL GENERATED COMMENTS BEFORE SUBMITTING YOUR PULL REQUEST!
-class cppLog2file < Formula
-  desc "A dead simple c++ logging system"
+class CppLog2file < Formula
+  desc "A dead simple header only logging system"
   homepage ""
   url "https://github.com/oneElectron/cpp-log2file/archive/refs/tags/v0.0.1.tar.gz"
   version "0.0.1"
@@ -11,7 +11,10 @@ class cppLog2file < Formula
 
   def install
     # ENV.deparallelize  # if your formula fails when building in parallel
-    system "cp", "-r", "./include/log2file", "#{prefix}/include"
+    # Remove unrecognized options if warned by configure
+    # https://rubydoc.brew.sh/Formula.html#std_configure_args-instance_method
+    system "cp", "-r", "./include", "#{prefix}/include"
+    # system "cmake", "-S", ".", "-B", "build", *std_cmake_args
   end
 
   test do
@@ -19,7 +22,7 @@ class cppLog2file < Formula
     #
     # This test will fail and we won't accept that! For Homebrew/homebrew-core
     # this will need to be a test that verifies the functionality of the
-    # software. Run the test with `brew test itex`. Options passed
+    # software. Run the test with `brew test cpp-log2file`. Options passed
     # to `brew install` such as `--HEAD` also need to be provided to `brew test`.
     #
     # The installed folder is not in the path, so use the entire path to any
@@ -27,3 +30,4 @@ class cppLog2file < Formula
     system "false"
   end
 end
+

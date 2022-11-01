@@ -4,9 +4,9 @@
 class Itex < Formula
   desc "A tool to start a latex project"
   homepage ""
-  url "https://github.com/oneElectron/itex/archive/refs/tags/v0.2.0.tar.gz"
-  version "0.2.0"
-  sha256 "a8ea517f390bb1551da75e3a61b786dfbf8fe6629bc61c80924d0d0b85c1dbde"
+  url "https://github.com/oneElectron/itex/archive/refs/tags/v0.3.0.tar.gz"
+  version "0.3.0"
+  sha256 ""
   license "GPL"
 
   depends_on "rust" => :build

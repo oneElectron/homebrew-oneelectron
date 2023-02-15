@@ -8,8 +8,8 @@ class Itex < Formula
   depends_on "rust" => :build
 
   def install
-    system "mkdir", "#{prefix}/etc"
-    system "mkdir", "#{prefix}/etc/itex"
+    mkdir("#{prefix}/etc")
+    mkdir("#{prefix}/etc/itex")
     cp_r("./itex-templates", "#{prefix}/etc/itex/itex-templates")
     system "cargo", "install", "--no-default-features", "--path", ".", "--root", prefix.to_s
   end

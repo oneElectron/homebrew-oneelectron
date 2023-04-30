@@ -1,8 +1,8 @@
 class Itex < Formula
   desc "Tool to start a latex project"
   homepage ""
-  url "https://github.com/oneElectron/itex/archive/refs/tags/v1.3.3.tar.gz"
-  sha256 "f0ced3a110f52ff5fdec7a7af1a2ce996b747dd5dc44b4c950b0e80a1ba307ba"
+  url "https://github.com/oneElectron/itex/archive/refs/tags/v1.3.4.tar.gz"
+  sha256 "e64b25dd50c1076e3ff9ae6c4c564be73334b52e3c761f3405c76550e9934363"
   license "GPL-3.0-or-later"
 
   depends_on "rust" => :build
